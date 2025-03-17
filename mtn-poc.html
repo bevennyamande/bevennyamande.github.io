@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Maps API Key Demo</title>
+  <style>
+    #map {
+      height: 400px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h1>Google Maps API Key Demo</h1>
+  <div id="map"></div>
+
+  <script>
+    // Exposed Google Maps API Key
+    const apiKey = "AIzaSyCUW9vxN7zO58hk0ZZYm3CEQ2PE7i7SY08";
+
+    // Initialize and display the map
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        center: { lat: -34.397, lng: 150.644 }, // Default center coordinates
+        zoom: 8, // Default zoom level
+      });
+    }
+  </script>
+
+  <!-- Load Google Maps JavaScript API with the exposed key -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUW9vxN7zO58hk0ZZYm3CEQ2PE7i7SY08&callback=initMap">
+  </script>
+</body>
+</html>
