@@ -3,91 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beven Nyamande - Cybersecurity & Data Specialist</title>
+    <title>Beven Nyamande (0xbeven) — Security Researcher &amp; Bug Bounty Hunter</title>
+    <meta name="description" content="Beven Nyamande (@0xbeven) — security researcher, web red-team analyst and Python developer. C3SA | WEB-RTA | CAP with 7 CVEs and multiple public advisories.">
+    <meta property="og:title" content="Beven Nyamande (0xbeven)">
+    <meta property="og:description" content="Security Researcher · Web Red Team Analyst · Python Developer — CVE disclosures &amp; bug bounty hunting.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128737;</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Beven Nyamande</h1>
-            <nav>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="#top" class="logo mono">&gt;_ 0xbeven</a>
+            <nav aria-label="Main navigation">
                 <ul>
+                    <li><a href="#research">CVEs</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#hackerone">HackerOne</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="top">
+
+        <!-- ===== HERO ===== -->
         <section id="hero" class="hero">
-            <div class="container">
-                <h2>Cybersecurity Analyst | Data Automation Specialist | Python Developer</h2>
-                <p>Passionate about securing digital landscapes and automating data-driven insights.</p>
+            <div class="container hero-inner reveal">
+                <div class="avatar-ring">
+                    <img src="rudeus.jpeg" alt="Beven Nyamande avatar" width="150" height="150">
+                </div>
+
+                <p class="mono prompt">$ whoami<span class="caret"></span></p>
+                <h1 class="hero-name">Beven Nyamande</h1>
+                <p class="hero-sub"><span class="handle">0xbeven</span> <span class="dot-sep">&middot;</span> he/him</p>
+                <p class="hero-tagline">
+                    Offensive security researcher &amp; Python developer — breaking web applications,
+                    automating everything else, and getting paid to report the fallout.
+                </p>
+
+                <ul class="cert-badges" aria-label="Certifications">
+                    <li class="badge">C3SA</li>
+                    <li class="badge">WEB-RTA</li>
+                    <li class="badge">CAP</li>
+                </ul>
+
                 <div class="social-links">
-                    <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
-                    <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer" aria-label="HackerOne Profile"><i class="fas fa-bug"></i></a>
-                    <a href="https://twitter.com/0xbeven" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer" aria-label="HackerOne"><i class="fas fa-bug"></i></a>
+                    <a href="https://twitter.com/0xbeven" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://tryhackme.com/p/werkzeug" target="_blank" rel="noopener noreferrer" aria-label="TryHackMe"><i class="fas fa-terminal"></i></a>
+                    <a href="https://www.kaggle.com/bevennyamande" target="_blank" rel="noopener noreferrer" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                    <a href="mailto:0xbeven@wearehackerone.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+
+                <div class="cta-row">
+                    <a href="#research" class="btn btn-primary">View CVE Disclosures</a>
+                    <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">HackerOne Profile <i class="fas fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </section>
 
+        <!-- ===== CVE DISCLOSURES ===== -->
+        <section id="research" class="research">
+            <div class="container">
+                <div class="reveal">
+                    <p class="kicker mono">// security research</p>
+                    <h2>CVE Disclosures</h2>
+                    <p class="section-sub">Assigned vulnerabilities and public advisories from my vulnerability research.</p>
+                </div>
+
+                <div class="cve-grid">
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2022-2930" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2022-2930</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2024-10448" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2024-10448</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2024-51435" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2024-51435</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2024-10557" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2024-10557</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2024-10605" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2024-10605</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2025-58622" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2025-58622</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card reveal" href="https://nvd.nist.gov/vuln/detail/CVE-2025-9949" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">CVE-2025-9949</span>
+                        <span class="cve-link mono">NVD <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                    <a class="cve-card ghsa reveal" href="https://github.com/advisories/GHSA-mf3j-vxq2-vmc4" target="_blank" rel="noopener noreferrer">
+                        <span class="cve-id mono">GHSA-mf3j-vxq2-vmc4</span>
+                        <span class="cve-link mono">GitHub Advisory <i class="fas fa-arrow-up-right-from-square"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT ===== -->
         <section id="about" class="about">
             <div class="container">
-                <h3>About Me</h3>
-                <p>I am a dedicated cybersecurity analyst and Python developer with a strong focus on web application security and efficient data automation. My journey involves continuously exploring vulnerabilities, building robust data solutions, and contributing to a safer digital environment. I thrive on challenges that push my technical boundaries and enjoy transforming complex data into actionable insights.</p>
-                <p>My expertise spans across vulnerability research, web scraping, API development, and data processing, always with an eye towards security best practices and scalable solutions.</p>
+                <div class="reveal">
+                    <p class="kicker mono">// about</p>
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            I'm a dedicated cybersecurity analyst and Python developer focused on
+                            <strong>web application security</strong> and <strong>offensive research</strong>.
+                            My work lives at the intersection of breaking things and building things —
+                            hunting vulnerabilities through platforms like
+                            <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer">HackerOne</a> and
+                            <a href="https://huntr.dev/users/bevennyamande/" target="_blank" rel="noopener noreferrer">huntr.dev</a>,
+                            while crafting automation and data tooling in Python.
+                        </p>
+                        <p>
+                            My expertise spans vulnerability research, web scraping, API development, and data
+                            processing — always with security best practices and scalable solutions in mind.
+                            Off the clock you'll find me grinding CTF challenges on
+                            <a href="https://tryhackme.com/p/werkzeug" target="_blank" rel="noopener noreferrer">TryHackMe</a>
+                            or diving into datasets on
+                            <a href="https://www.kaggle.com/bevennyamande" target="_blank" rel="noopener noreferrer">Kaggle</a>.
+                        </p>
+                    </div>
+                    <div class="terminal-window reveal" role="img" aria-label="Terminal showing skill list">
+                        <div class="terminal-bar">
+                            <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+                            <span class="t-title mono">beven@sec: ~</span>
+                        </div>
+                        <pre class="terminal-body mono"><code><span class="t-green">$</span> cat skills.txt
+
+<span class="t-cyan">&#9492;&#9472;</span> offensive-security
+<span class="t-cyan">   &#9492;&#9472;</span> web app pentesting
+<span class="t-cyan">   &#9492;&#9472;</span> bug bounty hunting
+<span class="t-cyan">   &#9492;&#9472;</span> vuln research &amp; CVEs
+
+<span class="t-cyan">&#9492;&#9472;</span> development
+<span class="t-cyan">   &#9492;&#9472;</span> python / flask
+<span class="t-cyan">   &#9492;&#9472;</span> automation &amp; scraping
+<span class="t-cyan">   &#9492;&#9472;</span> data pipelines
+
+<span class="t-green">$</span> <span class="blink">&#9612;</span></code></pre>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- ===== PROJECTS ===== -->
         <section id="projects" class="projects">
             <div class="container">
-                <h3>Featured Projects</h3>
+                <div class="reveal">
+                    <p class="kicker mono">// builds</p>
+                    <h2>Featured Projects</h2>
+                    <p class="section-sub">Open-source tooling I've shipped.</p>
+                </div>
                 <div class="project-grid">
-                    <div class="project-card">
-                        <h4><a href="https://github.com/bevennyamande/Zimbabwe-Stock-Exchange-Daily-Pricesheets" target="_blank" rel="noopener noreferrer">ZSE Daily Pricesheets Scraper</a></h4>
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3><a href="https://github.com/bevennyamande/Zimbabwe-Stock-Exchange-Daily-Pricesheets" target="_blank" rel="noopener noreferrer">ZSE Daily Pricesheets Scraper</a></h3>
                         <p>A Python-based project for daily scraping and building a historical dataset of trade activity from the Zimbabwe Stock Exchange (ZSE).</p>
-                        <p class="tech-stack">Python, Pandas, Web Scraping</p>
-                    </div>
-                    <div class="project-card">
-                        <h4><a href="https://github.com/bevennyamande/telegram-hackerone-bot" target="_blank" rel="noopener noreferrer">Telegram HackerOne Bot</a></h4>
+                        <ul class="tech-stack mono">
+                            <li>Python</li><li>Pandas</li><li>Web Scraping</li>
+                        </ul>
+                    </article>
+                    <article class="project-card reveal">
+                        <div class="project-icon"><i class="fab fa-telegram"></i></div>
+                        <h3><a href="https://github.com/bevennyamande/telegram-hackerone-bot" target="_blank" rel="noopener noreferrer">Telegram HackerOne Bot</a></h3>
                         <p>A Flask-based Telegram bot to interact with the HackerOne API, providing quick access to earnings, programs, and scope information.</p>
-                        <p class="tech-stack">Python, Flask, Telegram Bot API, HackerOne API</p>
-                    </div>
-                    </div>
-                <p class="view-more">Explore more on my <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer">GitHub Profile</a>.</p>
+                        <ul class="tech-stack mono">
+                            <li>Python</li><li>Flask</li><li>HackerOne API</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="view-more reveal">Explore more on <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer">GitHub <i class="fas fa-arrow-up-right-from-square"></i></a></p>
             </div>
         </section>
 
+        <!-- ===== HACKERONE ===== -->
         <section id="hackerone" class="hackerone">
-            <div class="container">
-                <h3>HackerOne Contributions</h3>
-                <p>As an active bug bounty hunter on HackerOne, I am committed to identifying and reporting security vulnerabilities to enhance the digital security of various organizations. My focus is on web application security, aiming to uncover critical issues that could impact user data and system integrity.</p>
-                <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer" class="btn-primary">View HackerOne Profile <i class="fas fa-external-link-alt"></i></a>
+            <div class="container hackerone-inner reveal">
+                <div class="hackerone-icon"><i class="fas fa-bug"></i></div>
+                <div class="hackerone-copy">
+                    <p class="kicker mono">// bug bounty</p>
+                    <h2>HackerOne Contributions</h2>
+                    <p>
+                        As an active bug bounty hunter, I identify and report security vulnerabilities to help
+                        organizations harden their attack surface. My focus is web application security — uncovering
+                        critical issues that impact user data and system integrity.
+                    </p>
+                    <a href="https://hackerone.com/0xbeven" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View HackerOne Profile <i class="fas fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </section>
 
+        <!-- ===== CONTACT ===== -->
         <section id="contact" class="contact">
             <div class="container">
-                <h3>Get In Touch</h3>
-                <p>I'm always open to new opportunities, collaborations, or discussions. Feel free to connect with me!</p>
-                <ul class="contact-list">
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:0xbeven@wearehackerone.com">0xbeven@wearehackerone.com</a> </li>
-                    <li><i class="fab fa-twitter"></i> <a href="https://twitter.com/0xbeven" target="_blank" rel="noopener noreferrer">@0xbeven</a></li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer">bevennyamande</a></li>
+                <div class="reveal">
+                    <p class="kicker mono">// contact</p>
+                    <h2>Get In Touch</h2>
+                    <p class="section-sub">Open to opportunities, collaborations, and interesting problems. Reach out.</p>
+                </div>
+                <ul class="contact-list reveal">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:0xbeven@wearehackerone.com" class="mono">0xbeven@wearehackerone.com</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-x-twitter"></i>
+                        <a href="https://twitter.com/0xbeven" target="_blank" rel="noopener noreferrer" class="mono">@0xbeven</a>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/bevennyamande" target="_blank" rel="noopener noreferrer" class="mono">bevennyamande</a>
+                    </li>
                 </ul>
             </div>
         </section>
+
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; <script>document.write(new Date().getFullYear())</script> Beven Nyamande. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="mono">&copy; <span id="year">2025</span> Beven Nyamande <span class="dot-sep">&middot;</span> 0xbeven</p>
+            <p class="footer-note">Securing the digital world, one report at a time.</p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const reveals = document.querySelectorAll('.reveal');
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReduced || !('IntersectionObserver' in window)) {
+            reveals.forEach(el => el.classList.add('visible'));
+        } else {
+            const io = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            reveals.forEach(el => io.observe(el));
+        }
+    </script>
 </body>
 </html>
